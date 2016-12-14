@@ -19,7 +19,7 @@ To obtain age estimates from your own neuroimaging data you need the following:
  
   `sudo apt-get install curl`
 
-4. napr.sh from the client directory
+4. [napr.sh] (https://github.com/hpardoe/napr/blob/master/client/napr.sh)
 
 Usage
 
