@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Package: napr\nType: Package\nTitle: Predict age using morphometric estimates derived using Freesurfer v5.3.\nVersion: 0.1.2\nAuthor: Heath Pardoe\nMaintainer: Heath Pardoe <heath.pardoe@nyumc.org>\nDescription: Takes thickness surface files and uses these as input to a predictive model to return an estimate of the age of the person who had the MRI scan\nLicense: Apache-2.0\nLazyData: TRUE\nRoxygenNote: 5.0.1\n",
+    "created" : 1481576278168.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2902970560",
+    "id" : "135C9F9E",
+    "lastKnownWriteTime" : 1481731573,
+    "last_content_update" : 1481731573195,
+    "path" : "~/Dropbox/brainage/software/server/napr/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}

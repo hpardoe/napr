@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#' feed freesurfer stats into model to predict age\n#' @param file uploaded tar archive\n#' @param model a predictive model generated using kernlab library\n#' @return predicted age\nreport.age <- function(file,model = rvmm.fsavg4) {\n  #require(\"kernlab\")\n\tpred.age <- kernlab::predict(model,read.upload.file(file))\n\tmodel.id <- deparse(substitute(model))\n\t#package.version <- \"napr.0.1.2\"\n\tpackage.version <- packageVersion(\"napr\")\n\tcat(\"Predicted age: \",pred.age,\"\\n\")\n\tcat(\"Model version: \",model.id,\"\\n\")\n\tcat(\"Package version: \",as.character(package.version),\"\\n\")\n}",
+    "created" : 1481576265254.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2393393057",
+    "id" : "8C01CB8",
+    "lastKnownWriteTime" : 1481575534,
+    "last_content_update" : 1481575534,
+    "path" : "~/Dropbox/brainage/software/server/napr/R/report.age.R",
+    "project_path" : "R/report.age.R",
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#' read .brainage_upload_file\n#' @param input a tar archive containing lh.thickness.fwhm0.fsaverage4.mgh and rh.thickness.fwhm0.fsaverage4.mgh for a subject\n#' @return a matrix with the numbers laid out so the predictive model can read them\nread.upload.file <- function(input) {\n\t# untar\n\tmy.tar <- untar(input, list=T)\n\tuntar(input,list=F)\n\t# load mgh files\n\tlh <- load.mgh(my.tar[1])\n\trh <- load.mgh(my.tar[2])\n\tthick.vals <- c(lh$x,rh$x)\n\tthick.matrix <- matrix(data = thick.vals, nrow = 1, ncol = (lh$ndim1 + rh$ndim1))\n\t# turn into matrix\n\tthick.matrix\n}\n",
+    "created" : 1481576260774.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2773391688",
+    "id" : "A1D62A3",
+    "lastKnownWriteTime" : 1480453951,
+    "last_content_update" : 1480453951,
+    "path" : "~/Dropbox/brainage/software/server/napr/R/napr.file.reader.20161129.R",
+    "project_path" : "R/napr.file.reader.20161129.R",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

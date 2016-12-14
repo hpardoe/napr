@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "load.mgh <-\nfunction(input.file) {\n\t\n\tto.read <- file(input.file,\"rb\")\n\n\tv <- readBin(to.read,integer(), endian = \"big\")\n\tndim1 <- readBin(to.read,integer(), endian = \"big\")\n\tndim2 <- readBin(to.read,integer(), endian = \"big\") \n\tndim3 <- readBin(to.read,integer(), endian = \"big\") \n\tnframes <- readBin(to.read,integer(), endian = \"big\")\n\ttype <- readBin(to.read,integer(), endian = \"big\") \n\tdof <- readBin(to.read,integer(), endian = \"big\")\n\t\n\tclose(to.read)\n\n\tto.read <- file(input.file,\"rb\")\n\tdump <- readBin(to.read,double(),size = 4,n = 71, endian = \"big\")\n\tx <- readBin(to.read,double(),size = 4, n = ndim1, endian = \"big\")\n\tclose(to.read)\n\t\n\tlist(x = x,v = v,ndim1 = ndim1,ndim2 = ndim2,ndim3 = ndim3,nframes = nframes,type = type,dof = dof)\n\n}\n",
+    "created" : 1481576254695.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4023554951",
+    "id" : "FDF0B20B",
+    "lastKnownWriteTime" : 1480451878,
+    "last_content_update" : 1480451878,
+    "path" : "~/Dropbox/brainage/software/server/napr/R/load.mgh.R",
+    "project_path" : "R/load.mgh.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
