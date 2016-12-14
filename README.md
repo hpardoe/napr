@@ -21,7 +21,7 @@ To obtain age estimates from your own neuroimaging data you need the following:
 
 4. [napr.sh] (https://github.com/hpardoe/napr/blob/master/client/napr.sh)
 
-Usage
+**Usage**
 
 1. Set SUBJECTS_DIR as per standard Freesurfer processing
 2. run `napr.sh subject.id`
