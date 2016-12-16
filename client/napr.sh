@@ -2,6 +2,9 @@
 # take subject ID and return measurement
 # SUBJECTS_DIR needs to be defined
 # 
+# need to do the two steps below to get tar to work properly on Macs
+COPYFILE_DISABLE=1
+export COPYFILE_DISABLE
 
 SUBJ=$1
 
