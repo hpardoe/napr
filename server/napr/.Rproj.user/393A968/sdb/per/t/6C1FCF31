@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#' feed freesurfer stats into model to predict age\n#' @param file uploaded tar archive\n#' @param model.list a list of predictive models generated using kernlab library\n#' @return predicted age\nreport.age.multiple.models <- function(file,model.list = list(rvmm.full.20161228.model,gausspr.full.20161228.model)) {\n  \n  model.names <- as.character(formals(report.age.multiple.models)$model.list)[-1]\n  cat(sprintf(\"%-30s %13s\\n\",\"Model\",\"Predicted age\"))\n\n  for (i in 1:length(model.list)) {\n    model <- model.list[[i]]\n\t  pred.age <- kernlab::predict(model,read.upload.file(file))\n\t  model.id <- model.names[i]\n\t  package.version <- packageVersion(\"napr\")\n\t  cat(sprintf(\"%-30s %13.1f\\n\",model.id,pred.age))\n  }\n}",
+    "created" : 1483041117700.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2094995007",
+    "id" : "6C1FCF31",
+    "lastKnownWriteTime" : 1483040910,
+    "last_content_update" : 1483040910,
+    "path" : "~/Dropbox/brainage/software/server/napr/R/report.age.multiple.models.R",
+    "project_path" : "R/report.age.multiple.models.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

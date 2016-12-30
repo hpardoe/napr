@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#' Age prediction models\n#' generated using rvmm part of kernlab library\n#' @format kernlab prediction model\n#' @source a bunch of control MRI datasets\n\"rvmm.fsavg4\"\n\"rvmm.full.20161228.model\"\n\"gausspr.full.20161228.model\"",
+    "created" : 1483123320743.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1625863577",
+    "id" : "8B3EBB36",
+    "lastKnownWriteTime" : 1483041095,
+    "last_content_update" : 1483041095,
+    "path" : "~/Dropbox/brainage/software/server/napr/R/data.R",
+    "project_path" : "R/data.R",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

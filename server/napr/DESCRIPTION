@@ -1,7 +1,7 @@
 Package: napr
 Type: Package
 Title: Predict age using morphometric estimates derived using Freesurfer v5.3.
-Version: 0.1.2
+Version: 0.1.3
 Author: Heath Pardoe
 Maintainer: Heath Pardoe <heath.pardoe@nyumc.org>
 Description: Takes thickness surface files and uses these as input to a predictive model to return an estimate of the age of the person who had the MRI scan

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#' feed freesurfer stats into model to predict age\n#' @param file uploaded tar archive\n#' @param model a predictive model generated using kernlab library\n#' @return predicted age\nreport.age <- function(file,model = rvmm.full.20161228.model) {\n  #require(\"kernlab\")\n\tpred.age <- kernlab::predict(model,read.upload.file(file))\n\tmodel.id <- deparse(substitute(model))\n\t#package.version <- \"napr.0.1.2\"\n\tpackage.version <- packageVersion(\"napr\")\n#\tcat(\"Predicted age: \",pred.age,\"\\n\")\n#\tcat(\"Model version: \",model.id,\"\\n\")\n#\tcat(\"Package version: \",as.character(package.version),\"\\n\")\n#\tcat(sprintf(\"%-30s %13s\\n\",\"Model\",\"Predicted age\"))\n#\tcat(sprintf(\"%-30s %13.1f\\n\",model.id,pred.age))\n\tcat(sprintf(\"%-30s %13s\\n\",\"Model\",\"Predicted age\"))\n\tcat(sprintf(\"%-30s %13.1f\\n\",model.id,pred.age))\n}",
+    "created" : 1483041112176.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "676314224",
+    "id" : "5D57FB47",
+    "lastKnownWriteTime" : 1483036120,
+    "last_content_update" : 1483036120,
+    "path" : "~/Dropbox/brainage/software/server/napr/R/report.age.R",
+    "project_path" : "R/report.age.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

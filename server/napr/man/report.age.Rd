@@ -4,10 +4,10 @@
 \alias{report.age}
 \title{feed freesurfer stats into model to predict age}
 \usage{
-report.age(file, model = rvmm.20161104)
+report.age(file, model = rvmm.full.20161228.model)
 }
 \arguments{
-\item{file}{concatenated aseg.stats, lh.aparc and rh.aparc files}
+\item{file}{uploaded tar archive}
 
 \item{model}{a predictive model generated using kernlab library}
 }
