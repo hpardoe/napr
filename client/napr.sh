@@ -20,6 +20,10 @@ while getopts ":a:" opt; do
       cd $SUBJECTS_DIR
       LH_THICK=$SUBJ"/surf/lh.thickness.fwhm0.fsaverage4.mgh"
       RH_THICK=$SUBJ"/surf/rh.thickness.fwhm0.fsaverage4.mgh"
+      if [ ! -f $LH_THICK ] || [ ! -f $RH_THICK ] ; then
+        echo "File $LH_THICK or $RH_THICK not found"
+        exit
+      fi
       echo $SUBJ > sub_id.txt
       tar -czf /tmp/.cloudneuro_tar.gz $LH_THICK $RH_THICK sub_id.txt
       cd $MYDIR
@@ -52,6 +56,10 @@ MYDIR=$PWD
 cd $SUBJECTS_DIR
 LH_THICK=$SUBJ"/surf/lh.thickness.fwhm0.fsaverage4.mgh"
 RH_THICK=$SUBJ"/surf/rh.thickness.fwhm0.fsaverage4.mgh"
+if [ ! -f $LH_THICK ] || [ ! -f $RH_THICK ] ; then
+  echo "File $LH_THICK or $RH_THICK not found"
+  exit
+fi
 echo $SUBJ > sub_id.txt
 tar -czf /tmp/.cloudneuro_tar.gz $LH_THICK $RH_THICK sub_id.txt
 cd $MYDIR
